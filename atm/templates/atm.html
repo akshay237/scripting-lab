@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ATM </title>
+    </head>
+    <body>
+        <h1 style="color:rgb(red, green, blue)">ATM:</h1>
+        <h2 style="color:rosybrown">Your balance is:{{balance}}</h2>
+        <h3 style="color: salmon">{{msg}}</h3>
+        <form action="{{url_for('index')}}" method="POST" id="atm">
+            Amount:<input type="number" name="amount"  /><br>
+            <input type="submit" name="action" value="Withdraw" />
+            <input type="submit" name="action" value="Deposit" />
+        </form>
+    </body>
+</html>
