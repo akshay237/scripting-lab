@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pgm5</title>
+        <script src="a5.js"></script>
+    </head>
+    <body>
+        <table border="2">
+            <tr>
+                <th>Name</th><th>Native</th><th>Story _title</th><th>yearofpubl</th>
+            </tr>
+            <tr>
+                <td id="p1"></td><td id="n1"></td><td id="s1"></td><td id="y1"></td>
+            </tr>
+            <tr>
+                <td id="p2"></td><td id="n2"></td><td id="s2"></td><td id="y2"></td>
+            </tr>
+        </table>
+        Name:<span id="p3"></span> Native:<span id="n3"><</span> Story:<span id="s3"> </span>Year:<span id="y3"></span><br>
+        Name:<span id="p4"></span> Native:<span id="n4"><</span> Story:<span id="s4"> </span>Year:<span id="y4"></span><br>
+    </body>
+    <script>
+        var x=JSON.parse(x);
+        document.getElementById('p1').innerHTML=x.Author1.name;
+        document.getElementById('n1').innerHTML=x.Author1.native;
+        document.getElementById('s1').innerHTML=x.Author1.story;
+        document.getElementById('y1').innerHTML=x.Author1.year;
+        document.getElementById('p2').innerHTML=x.Author2.name;
+        document.getElementById('n2').innerHTML=x.Author2.native;
+        document.getElementById('s2').innerHTML=x.Author2.story;
+        document.getElementById('y2').innerHTML=x.Author2.year;
+        document.getElementById('p3').innerHTML=x.Author3.name;
+        document.getElementById('n3').innerHTML=x.Author3.native;
+        document.getElementById('s3').innerHTML=x.Author3.story;
+        document.getElementById('y3').innerHTML=x.Author3.year;
+        document.getElementById('p4').innerHTML=x.Author4.name;
+        document.getElementById('n4').innerHTML=x.Author4.native;
+        document.getElementById('s4').innerHTML=x.Author4.story;
+        document.getElementById('y4').innerHTML=x.Author4.year;
+        
+    </script>
+</html>

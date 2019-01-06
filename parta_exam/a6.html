@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="calc.js"></script>
+</head>
+<body>
+    <h1 style="color:Red">Simple Calculator</h1>
+    <p style="color:Blue">Please enter the numbers for the following arithmetic operations:</p>
+    <form>
+      First Number:<br>
+      <input type="number" id="m1" name="m1" required/><br>
+      Second Number:<br>
+      <input type="number" id="m2" name="m2" required/><br>
+      <input type="radio" name="final" onclick="Calculate()" id="add" value="Add" />Add<br>
+      <input type="radio" name="final" onclick="Calculate()" id="subtract" value="Subtract"/>Subtract<br>
+      <input type="radio" name="final" onclick="Calculate()" id="multiply" value="Multiply"/>Multiply<br>
+      <input type="radio" name="final" onclick="Calculate()" id="divide" value="Divide"/>Divide<br>
+      Result:<span id="result"></span><br>
+    </form>
+</body>
+</html>

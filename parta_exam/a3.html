@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pgm3</title>
+    </head>
+    <body>
+        <input type="text" id="str" name="sentence" /><br>
+        <input type="button" value=lenstr onclick=lenstr() /><br>
+        Length:<span id="l"></span><br>
+        Word:<span id="w"></span><br>
+    </body>
+    <script>
+        function lenstr()
+        {
+            var s=document.getElementById('str').value;
+            var p,i,m=0;
+            var x=" ";
+            p=s.split(" ");
+            for(i=0;i<p.length;i++)
+            {
+                if(m<p[i].length)
+                {
+                    m=p[i].length;
+                    x=p[i];
+                }
+            }
+            document.getElementById('l').innerHTML=m;
+            document.getElementById('w').innerHTML=x;
+
+        }
+    </script>
+</html>
