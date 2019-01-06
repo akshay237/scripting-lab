@@ -7,7 +7,7 @@ import seaborn as sns
 student_df = pd.read_csv("StudentsPerformance.csv")
 
 print("======Data Headers=======")
-student_df.head()
+print(student_df.head(10))
 
 print("=====Data Decription=====")
 student_df.info()
